@@ -1,0 +1,127 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4f7, #d9e2ec);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+input {
+  padding: 14px 20px;
+  font-size: 18px;
+  border: 2px solid #4a90e2;
+  border-radius: 8px;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #357ab7;
+  box-shadow: 0 0 8px rgba(53, 122, 183, 0.5);
+}
+
+input::placeholder {
+  color: #888;
+}
+
+/* Button Styling */
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(45deg, #4a90e2, #357ab7);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: linear-gradient(45deg, #357ab7, #4a90e2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  background: #276b98;
+  transform: translateY(2px);
+}
+
+/* Disabled Button */
+button:disabled {
+  background: #d3d3d3;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* QR Code Image Styling */
+img {
+  margin-top: 30px;
+  max-width: 250px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+/* Error Handling */
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Optional: Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  div {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
