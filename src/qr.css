@@ -57,7 +57,7 @@ input::placeholder {
   color: #888;
 }
 
-/* Button Styling */
+
 button {
   padding: 12px 24px;
   font-size: 18px;
@@ -80,14 +80,13 @@ button:active {
   transform: translateY(2px);
 }
 
-/* Disabled Button */
+
 button:disabled {
   background: #d3d3d3;
   cursor: not-allowed;
   box-shadow: none;
 }
 
-/* QR Code Image Styling */
 img {
   margin-top: 30px;
   max-width: 250px;
@@ -99,14 +98,17 @@ img:hover {
   transform: scale(1.1);
 }
 
-/* Error Handling */
 .error {
   color: red;
   font-size: 16px;
   margin-top: 10px;
+  padding: 10px;
+  background-color: #f8d7da;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-/* Optional: Responsive Design */
 @media (max-width: 600px) {
   h1 {
     font-size: 2rem;
